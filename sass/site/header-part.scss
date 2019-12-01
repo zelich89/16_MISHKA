@@ -1,0 +1,143 @@
+.burger, .close {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.xs-version {
+  & .close {
+    display: none;
+  }
+}
+
+.header.active {
+  .close {
+    display: block;
+  }
+  .burger {
+    display: none;
+  }
+  .menu {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+}
+
+.menu {
+  position: absolute;
+  right: -15px;
+  left: -15px;
+  bottom: 0;
+  transform: translateY(0);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.link {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: $m-white;
+}
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+
+.h-60 {
+  height: 60px;
+}
+
+.h-150 {
+  height: 150px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: darkolivegreen;
+}
+
+.head-item {
+  display: flex;
+}
+
+.logo {
+  height: 88px;
+  background: url("/images/logo-xs.png") no-repeat center;
+  @include media-breakpoint-up(sm) {
+    background: url("/images/logo-sm.png") no-repeat;
+    background-position: left;
+  }
+  @include media-breakpoint-up(lg) {
+    background: url("/images/logo-lg.png") no-repeat center;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  //justify-content: center;
+  padding: 30px 30px 30px 75px;
+  white-space: nowrap;
+  position: relative;
+  @include media-breakpoint-up(sm) {
+    padding: 30px 30px;
+  }
+}
+
+.katalog {
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: space-around;
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+    .item {
+      //padding: 30px 0;
+      &:first-child {
+        border-right: 1px solid $light;
+        padding-right: 30px;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 18px;
+  }
+}
+
+.bag {
+  flex-direction: column;
+  justify-content: flex-end;
+  .icon {
+    &-left {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 30px;
+    }
+    &-own {
+      @extend .icon-left;
+      @include media-breakpoint-up(sm) {
+        position: relative;
+        left: 0;
+      }
+    }
+  }
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+    font-size: 18px;
+    .item {
+      border-left: 1px solid $light;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 16px;
+  }
+}
+
+.delivery {
+  justify-content: flex-end;
+}

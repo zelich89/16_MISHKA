@@ -1,0 +1,201 @@
+.dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background-color: darkolivegreen;
+}
+
+body {
+
+}
+
+.media-breakpoint {
+  top: 10px;
+  left: 10%;
+  //left: 50%;
+  //left: 65%;
+  transform: translateX(-50%);
+  &:after {
+    content: "xs";
+    font-weight: bold;
+    color: Crimson;
+    font-size: 48px;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  }
+  @include media-breakpoint-up(sm) {
+    &:after {
+      content: "sm";
+      color: Gold;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    &:after {
+      content: "md";
+      color: DarkTurquoise;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    &:after {
+      content: "lg";
+      color: MediumVioletRed;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    &:after {
+      content: "xl";
+      color: ForestGreen;
+    }
+  }
+}
+
+.h-11 {
+  height: 11px;
+}
+
+.h-201 {
+  height: 201px;
+}
+
+.h-620 {
+  height: 620px;
+}
+
+.dn {
+  display: none;
+}
+
+.button {
+  &-left {
+    width: 100%;
+  }
+  &-right {
+    width: 100%;
+  }
+}
+
+.but-img {
+  object-fit: cover;
+}
+
+.d-span {
+  width: 80px;
+  text-align: left;
+}
+
+.about {
+  &-descr {
+    width: 270px;
+    padding-bottom: 25px;
+  }
+  &-pic {
+    display: inline-block;
+    margin-bottom: 20px;
+    height: 100%;
+    position: relative;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $primary;
+      opacity: .75;
+    }
+  }
+}
+
+.way {
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  padding: 10px 45px;
+  @include media-breakpoint-up(sm) {
+   border: none;
+    padding: 0 20px;
+  }
+}
+
+.zigzag-fill {
+  position: absolute;
+  bottom: -15px;
+  width: 100vw;
+  height: 34px;
+  background: url("/images/zigzag-fill.png") repeat-x;
+}
+
+.zigzag-line {
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  right: -10px;
+  height: 23px;
+  background: url("/images/zigzag-line-xs.png") repeat-x;
+  @include media-breakpoint-up(sm) {
+    background: url("/images/zigzag-line.png") repeat-x;
+    opacity: 0.5;
+    bottom: 0;
+  }
+}
+
+.review-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.map-pic {
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact {
+  &-one {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+  }
+}
+
+.map {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.made-by {
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $primary;
+    opacity: .75;
+  }
+}
+
+.main {
+  @include media-breakpoint-up(sm) {
+    margin-top: -84px;
+  }
+}

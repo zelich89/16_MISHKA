@@ -1,6 +1,21 @@
+.main-padding {
+  padding-top: 70px;
+  padding-bottom: 120px;
+  @include media-breakpoint-up(md) {
+    padding-top: 100px;
+    padding-bottom: 350px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 110px;
+    padding-bottom: 300px;
+  }
+
+
+}
+
 $iter: 150;
 
-@for $i from 0 through $iter{
+@for $i from -20 through $iter{
   @if ($i%5 == 0) {
     .mt-#{$i} {
       margin-top: #{$i}px !important;
@@ -59,6 +74,72 @@ $iter: 150;
     }
     .p-#{$i} {
       padding: #{$i}px !important;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  @for $i from 0 through $iter {
+    @if ($i%5 == 0) {
+      .mt-sm-#{$i} {
+        margin-top: #{$i}px !important;
+      }
+
+      .mr-sm-#{$i} {
+        margin-right: #{$i}px !important;
+      }
+
+      .mb-sm-#{$i} {
+        margin-bottom: #{$i}px !important;
+      }
+
+      .ml-sm-#{$i} {
+        margin-left: #{$i}px !important;
+      }
+
+      .mx-sm-#{$i} {
+        margin-right: #{$i}px !important;
+        margin-left: #{$i}px !important;
+      }
+
+      .my-sm-#{$i} {
+        margin-top: #{$i}px !important;
+        margin-bottom: #{$i}px !important;
+      }
+
+      .m-sm-#{$i} {
+        margin: #{$i}px !important;
+      }
+
+      .pt-sm-#{$i} {
+        padding-top: #{$i}px !important;
+      }
+
+      .pr-sm-#{$i} {
+        padding-right: #{$i}px !important;
+      }
+
+      .pb-sm-#{$i} {
+        padding-bottom: #{$i}px !important;
+      }
+
+      .pl-sm-#{$i} {
+        padding-left: #{$i}px !important;
+      }
+
+      .px-sm-#{$i} {
+        padding-right: #{$i}px !important;
+        padding-left: #{$i}px !important;
+      }
+
+      .py-sm-#{$i} {
+        padding-top: #{$i}px !important;
+        padding-bottom: #{$i}px !important;
+      }
+
+      .p-sm-#{$i} {
+        padding: #{$i}px !important;
+      }
     }
   }
 }
@@ -132,68 +213,69 @@ $iter: 150;
 @include media-breakpoint-up(lg) {
   @for $i from 0 through $iter {
     @if ($i%5 == 0) {
-      .mt-md-#{$i} {
+      .mt-lg-#{$i} {
         margin-top: #{$i}px !important;
       }
 
-      .mr-md-#{$i} {
+      .mr-lg-#{$i} {
         margin-right: #{$i}px !important;
       }
 
-      .mb-md-#{$i} {
+      .mb-lg-#{$i} {
         margin-bottom: #{$i}px !important;
       }
 
-      .ml-md-#{$i} {
+      .ml-lg-#{$i} {
         margin-left: #{$i}px !important;
       }
 
-      .mx-md-#{$i} {
+      .mx-lg-#{$i} {
         margin-right: #{$i}px !important;
         margin-left: #{$i}px !important;
       }
 
-      .my-md-#{$i} {
+      .my-lg-#{$i} {
         margin-top: #{$i}px !important;
         margin-bottom: #{$i}px !important;
       }
 
-      .m-md-#{$i} {
+      .m-lg-#{$i} {
         margin: #{$i}px !important;
       }
 
-      .pt-md-#{$i} {
+      .pt-lg-#{$i} {
         padding-top: #{$i}px !important;
       }
 
-      .pr-md-#{$i} {
+      .pr-lg-#{$i} {
         padding-right: #{$i}px !important;
       }
 
-      .pb-md-#{$i} {
+      .pb-lg-#{$i} {
         padding-bottom: #{$i}px !important;
       }
 
-      .pl-md-#{$i} {
+      .pl-lg-#{$i} {
         padding-left: #{$i}px !important;
       }
 
-      .px-md-#{$i} {
+      .px-lg-#{$i} {
         padding-right: #{$i}px !important;
         padding-left: #{$i}px !important;
       }
 
-      .py-md-#{$i} {
+      .py-lg-#{$i} {
         padding-top: #{$i}px !important;
         padding-bottom: #{$i}px !important;
       }
 
-      .p-md-#{$i} {
+      .p-lg-#{$i} {
         padding: #{$i}px !important;
       }
     }
   }
 }
+
 @include media-breakpoint-up(xl) {
   @for $i from 0 through $iter {
     @if ($i%5 == 0) {

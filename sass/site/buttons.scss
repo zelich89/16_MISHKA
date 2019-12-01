@@ -1,0 +1,29 @@
+.my-btn{
+  @extend .btn;
+  border-radius: 0;
+}
+
+.ghost-btn {
+  @extend .btn;
+  border-radius: 0;
+  transition: all .2s ease;
+  &:hover {
+    background-color: $darker;
+    color: $light;
+  }
+  &:visited {
+    background-color: $darker;
+    color: $dark;
+  }
+}
+
+.arrow-btn {
+  background-color: black;
+  &:hover {
+    background-color: $darker;
+  }
+  &:visited {
+    background-color: $dark;
+  }
+
+}

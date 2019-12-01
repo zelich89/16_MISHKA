@@ -1,0 +1,4 @@
+.link-text-dark {
+  color: $darker;
+  &:focus, &:active, &:visited {color: $darker;}
+}

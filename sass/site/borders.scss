@@ -1,0 +1,36 @@
+.bord-x-1 {
+  border-left: 1px solid $light;
+  border-right: 1px solid $light;
+}
+
+.b-bottom {
+  border-bottom: 1px solid $light;
+}
+
+.border-1px {
+  border: 1px solid;
+}
+
+.border-darker {
+  border-color: $darker;
+}
+
+.border-t1 {
+  border-top: 1px solid;
+}
+.border-b1 {
+  border-bottom: 1px solid;
+}
+
+.border-light {
+  border-color: $light !important;
+}
+
+.border-tertiary {
+  border-color: $tertiary;
+}
+
+.border-5r {
+  border: 5px solid red;
+;
+}

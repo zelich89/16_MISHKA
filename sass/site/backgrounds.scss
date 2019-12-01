@@ -1,0 +1,32 @@
+.bg-green {
+  background-color: darkgreen;
+}
+
+.bg-red {
+  background-color: darkred;
+}
+
+///////////////////////////////////////////////////////////////////
+
+.bg-m-white {
+  background-color: $m-white;
+}
+
+.bg-my-primary {
+  background-color: $primary;
+}
+
+.bg-my-secondary {
+  background-color: $secondary;
+}
+
+.bg-main {
+  background: url("/images/hero-mobile.jpg") no-repeat top center/cover;
+  @include media-breakpoint-up(md) {
+    background: url(/images/hero-desktop.jpg);
+  }
+}
+
+.bg-light {
+  background-color: $light;
+}
