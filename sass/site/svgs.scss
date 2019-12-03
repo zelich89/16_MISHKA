@@ -12,3 +12,16 @@
     height: $close;
   }
 }
+
+.custom-checkbox {
+  @include square-size(checkbox-size-xs);
+  svg {
+    @include square-size(checkbox-size-xs/1.5);
+  }
+  @include media-breakpoint-up(sm) {
+    @include square-size(checkbox-size-sm);
+    svg {
+      @include square-size(checkbox-size-sm/1.5);
+    }
+  }
+}
