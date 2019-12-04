@@ -25,3 +25,10 @@
     }
   }
 }
+
+.big-icon {
+  @include square-size($b-icon);
+  svg {
+    @include square-size($b-icon);
+  }
+}

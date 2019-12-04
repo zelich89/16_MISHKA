@@ -35,7 +35,12 @@
         <symbol viewBox="0 0 24 24" id="icon-checked">
             <<path d="M24 4.685l-16.327 17.315-7.673-9.054.761-.648 6.95 8.203 15.561-16.501.728.685z" fill="currentColor"/>
         </symbol>
-
+        <symbol viewBox="0 0 24 24" id="icon-light">
+            <path d="M11.861 2.716s.04 1.615.14 5.527c.02.775-.142 1.545-.471 2.247l-3.349 6.96c-.206.961.645 2.297 2.027 2.945 1.332.625 2.777.404 3.405-.398l3.35-6.96c.329-.702.79-1.332 1.397-1.812 3.051-2.38 4.366-3.416 4.366-3.416l-10.865-5.093zm2.657 10.896c-.234.5-.83.716-1.33.481s-.715-.83-.48-1.331c.234-.499.83-.715 1.33-.48s.714.831.48 1.33zm-1.384-13.612l10.866 5.093-.849 1.811-10.866-5.093.849-1.811zm-13.134 16.271c0 1.823.688 3.71 1.951 5.249 1.234 1.503 2.9 2.48 4.539 2.48 1.354 0 2.791-.87 3.447-2.177l-1.121-.649c-1.051 1.894-3.215 1.881-4.072.576-.777-1.186-.619-3.261.436-5.692 1.006-2.321-.332-4.08-2.084-4.08-1.554-.001-3.096 1.407-3.096 4.293zm1.392-1.104c.184-.921.728-1.906 1.704-1.906.838 0 1.537.83.906 2.284-.879 2.027-1.197 3.845-.947 5.292-1.342-1.559-2.059-3.69-1.663-5.67z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon-box">
+            <path d="M12 0l-11 6v12.131l11 5.869 11-5.869v-12.066l-11-6.065zm-9 11.74l2 1.057v2.066l-2-1.056v-2.067zm9.005-.876l-2.065-1.127 1.778-.988 2.082 1.157-1.795.958zm.995 1.736l2-1.067v2.279l-2 1.056v-2.268zm1.852-3.255l-2.104-1.168 1.884-1.047 2.144 1.188-1.924 1.027zm-2.099-4.4l2.029-1.127 1.884 1.039-2.034 1.13-1.879-1.042zm.849 1.614l-1.883 1.046-1.877-1.043 1.881-1.045 1.879 1.042zm-4.79-.569l-1.791-.995 1.895-1.033 1.776.985-1.88 1.043zm1.877 2.187l-1.789.993-1.893-1.032 1.806-1.003 1.876 1.042zm-4.689 5.148l2 1.056v2.066l-2-1.056v-2.066zm2 4.253v2.021l-2-1.067v-2.011l2 1.057zm-2-5.384v-2.328l2 1.091v2.294l-2-1.057zm5 .399v2.242l-2-1.056v-2.276l2 1.09zm-2 2.316l2 1.056v2.066l-2-1.056v-2.066zm4 1.09l2-1.056v2.066l-2 1.056v-2.066zm5 .556v1.978l-2 1.067v-1.988l2-1.057zm-2-.075v-2.066l2-1.056v2.066l-2 1.056zm0-3.196v-2.284l2-1.068v2.295l-2 1.057zm3-.454l2-1.056v2.066l-2 1.056v-2.066zm2-2.187l-2 1.056v-2.301l2-1.067v2.312zm-3.174-2.885l-2.164-1.2 2.019-1.121-.017-.03 2.246 1.239-2.084 1.112zm-4.078-4.51l-2.026 1.126-1.768-.979 2.041-1.113 1.753.966zm-7.767 2.314l1.802 1.001-1.815 1.008-1.835-1.001 1.848-1.008zm-.981 3.759v2.346l-2-1.057v-2.38l2 1.091zm-2 5.616l2 1.056v2.005l-2-1.067v-1.994zm6 5.196v-2.027l2 1.056v2.038l-2-1.067zm4-.938l2-1.056v1.994l-2 1.067v-2.005zm6-1.196v-1.972l2-1.056v1.961l-2 1.067z" fill="currentColor"/>
+        </symbol>
     </svg>
 </head>
 <body>
@@ -82,21 +87,9 @@
                 <div class="col-10 col-sm-8 h2 bold text-black text-center">
                     Милые штуки ручной работы для дома
                 </div>
+
             </div>
         </div>
-    </div>
-
-    <div class="ch_trey">
-
-        <label class="checkbox-label x-center">
-            <input type="checkbox" class="checkbox" />
-            <div class="custom-checkbox bg-danger xy-center position-relative border-1px text-light mr-15">
-                <svg class="text-lighter">
-                    <use xlink:href="#icon-checked"></use>
-                </svg>
-            </div>
-        </label>
-
     </div>
 </header>
 
@@ -162,13 +155,21 @@
 <section class="d-n big-buttons position-relative bg-m-white">
     <div class="container x-center flex-column flex-sm-row px-0 ">
         <a href="#">
-            <div class="button-left bg-my-primary">
-                <img class="but-img" src="images/big-left-button.jpg" alt="">
+            <div class="row">
+                <div class="z-col-50 bg-my-primary y-center justify-content-end h-120 position-relative pr-55">
+                    <svg class="big-icon text-tertiary">
+                        <use xlink:href="#icon-light"></use>
+                    </svg>
+                </div>
             </div>
         </a>
         <a href="#">
-            <div class="button-right bg-my-secondary">
-                <img class="but-img" src="images/big-right-button.jpg" alt="">
+            <div class="row">
+                <div class="z-col-50 bg-my-secondary y-center justify-content-end h-120 position-relative pr-25">
+                    <svg class="big-icon text-tertiary">
+                        <use xlink:href="#icon-box"></use>
+                    </svg>
+                </div>
             </div>
         </a>
     </div>
