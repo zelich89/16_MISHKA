@@ -1,3 +1,14 @@
+body {
+  a {
+    color: $darker;
+    text-decoration: none;
+    &:hover, &:focus, &:active, &:visited {
+      color: $darker;
+      text-decoration: none;
+    }
+  }
+}
+
 .link-text-dark {
   color: $darker;
   &:focus, &:active, &:visited {color: $darker;}
