@@ -13,6 +13,13 @@
   }
 }
 
+.search {
+  @include square-size($search);
+  svg {
+    @include square-size($search);
+  }
+}
+
 .custom-checkbox {
   @include square-size(checkbox-size-xs);
   svg {
