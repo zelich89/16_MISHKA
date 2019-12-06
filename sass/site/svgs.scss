@@ -26,9 +26,16 @@
   }
 }
 
-.big-icon {
+.big-icon-size {
   @include square-size($b-icon);
   svg {
     @include square-size($b-icon);
+  }
+}
+
+.made-by {
+  @include square-size($cat);
+  svg {
+    @include square-size($cat);
   }
 }

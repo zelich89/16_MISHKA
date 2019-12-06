@@ -77,12 +77,19 @@ body {
   object-fit: cover;
 }
 
-.d-span {
-  width: 80px;
-  text-align: left;
+.param {
+  .d-span {
+    width: 80px;
+    text-align: left;
+    margin-right: 30px;
+  }
 }
 
+
 .about {
+  &-item {
+    height: 140px;
+  }
   &-descr {
     width: 270px;
     padding-bottom: 25px;
@@ -90,14 +97,14 @@ body {
   &-pic {
     display: inline-block;
     margin-bottom: 20px;
-    height: 100%;
+    //height: 100%;
     position: relative;
     & img {
       width: 100%;
       height: 100%;
     }
     &:after {
-      content: '';
+      content1: '';
       display: block;
       position: absolute;
       top: 0;
@@ -139,7 +146,7 @@ body {
   @include media-breakpoint-up(sm) {
     background: url("/images/zigzag-line.png") repeat-x;
     opacity: 0.5;
-    bottom: 0;
+    //bottom: 0;
   }
 }
 
@@ -153,14 +160,6 @@ body {
 .map-pic {
   width: 100%;
   object-fit: cover;
-}
-
-.contact {
-  &-one {
-    width: 100px;
-    height: 100px;
-    border: 1px solid #000;
-  }
 }
 
 .map {
@@ -182,7 +181,7 @@ body {
     height: 100%;
   }
   &:after {
-    content: '';
+    content1: '';
     display: block;
     position: absolute;
     top: 0;
@@ -200,9 +199,74 @@ body {
   }
 }
 
-//////////////////////////////////////////////////
-//////////////////////////////////////////////////
-//////////////////////////////////////////////////
-.z-col-50 {
-  width: 570px;
+.big-icon-posit {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.bag-picture-xl {
+  position: absolute;
+  right: 0;
+}
+
+.proposal {
+  &-name {
+    margin-bottom: 5px;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 65px;
+    }
+    &-xs {
+      @include media-breakpoint-up(sm) {
+        display: none;
+      }
+      @extend .caption-1, .text-uppercase, .text-primary, .bold;
+    }
+    &-sm {
+      display: none;
+      @include media-breakpoint-up(sm) {
+        display: block;
+        text-align: center;
+      }
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+      @extend .ml-auto, .caption-1, .text-uppercase, .text-primary, .bold;
+    }
+    &-lg {
+      display: none;
+      @include media-breakpoint-up(lg) {
+        display: block;
+        text-align: center;
+      }
+      @extend .caption-1, .text-uppercase, .text-primary, .bold;
+    }
+  }
+  &-content {
+    &-2 {
+      display: none;
+      @include media-breakpoint-up(sm) {
+        display: block;
+      }
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
+  }
+  &-price {
+    padding-bottom: 25px;
+    @include media-breakpoint-up(sm) {
+      padding-bottom: 35px;
+    }
+  }
+  &-img-lg {
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+    position: absolute;
+    right: 0;
+    z-index: 0;
+  }
 }
