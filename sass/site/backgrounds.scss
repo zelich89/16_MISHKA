@@ -21,11 +21,15 @@
 }
 
 .bg-main {
+  background: url("/images/hero-mobile.jpg") no-repeat center;
+  background-position-y: 5px;
+  @include media-breakpoint-up(sm) {
+    background-position-y: 10px;
+  }
   @include media-breakpoint-up(md) {
     background: url(/images/hero-desktop.jpg)  no-repeat center;
     background-position-y: top;
   }
-  background: url("/images/hero-mobile.jpg") no-repeat center;
 }
 
 .bg-light {
