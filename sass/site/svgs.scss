@@ -13,10 +13,10 @@
   }
 }
 
-.search {
-  @include square-size($search);
+.M-icon-size {
+  @include square-size($menu-icon-size);
   svg {
-    @include square-size($search);
+    @include square-size($menu-icon-size);
   }
 }
 

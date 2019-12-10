@@ -118,11 +118,11 @@
   justify-content: flex-end;
   .item {
     position: relative;
-    &:last-child {
+/*    &:last-child {
       padding-left: 50px;
-    }
+    }*/
   }
-  .icon-1 {
+  .icon {
     position: absolute;
     transform: translateX(-150%);
     @include media-breakpoint-up(sm) {
@@ -133,6 +133,12 @@
   .icon-2 {
     position: absolute;
     transform: translateX(-150%);
+  }
+  .icon-const {
+    @include media-breakpoint-up(sm) {
+      margin-right: 15px;
+    }
+
   }
   /*.icon {
     &-left {
