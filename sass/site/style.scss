@@ -204,6 +204,9 @@ body {
   top: 50%;
   right: 0;
   transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: transform .5s ease;
+
 }
 
 .bag-picture-xl {
@@ -274,5 +277,34 @@ body {
 .big-buttons {
   .bb-text {
     margin-left: 20px;
+    position: relative;
+    z-index: 1 ;
+  }
+}
+
+.bb-hover {
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 50%;
+    background-color: inherit;
+    z-index: 0;
+    transition: transform .5s linear;
+  }
+  &:hover {
+    transform: translateY(-5px);
+    transition: transform .5s linear ;
+    &:after {
+      transform: scaleY(1.1);
+      transform-origin: bottom;
+    }
+  }
+  &:visited {
+    .bb-text {
+      opacity: .3;
+    }
   }
 }
