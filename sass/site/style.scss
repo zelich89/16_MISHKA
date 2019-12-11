@@ -296,4 +296,12 @@ body {
     transform: translateY(-5px);
     transition: transform .2s ease;
   }
+  &:visited {
+    .bb-text {
+      opacity: .3;
+    }
+    .big-icon {
+      opacity: .3;
+    }
+  }
 }
