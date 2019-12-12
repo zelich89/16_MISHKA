@@ -7,6 +7,7 @@
   @extend .btn;
   border-radius: 0;
   transition: all .2s ease;
+  border: 2px solid;
   &:hover {
     background-color: $darker;
     color: $light;
@@ -25,5 +26,19 @@
   &:visited {
     background-color: $dark;
   }
+}
 
+.review-btn {
+  @include media-breakpoint-up(sm) {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+}
+
+.my-arrows{
+  margin: 0 auto;
+  @include media-breakpoint-up(sm) {
+    margin: 0;
+  }
 }

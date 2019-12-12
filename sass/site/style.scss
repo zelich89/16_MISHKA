@@ -117,11 +117,17 @@ body {
   }
 }
 
-.way {
-  border: 1px solid #000;
+.icon {
   display: flex;
   align-items: center;
-  padding: 10px 45px;
+  justify-content: center;
+}
+
+.way {
+  border: 1px solid rgba(0,0,0,.1);
+  display: flex;
+  align-items: center;
+  padding: 6px 45px;
   @include media-breakpoint-up(sm) {
    border: none;
     padding: 0 20px;
@@ -130,8 +136,9 @@ body {
 
 .zigzag-fill {
   position: absolute;
+  right: 0;
   bottom: -15px;
-  width: 100vw;
+  left: 0;
   height: 34px;
   background: url("/images/zigzag-fill.png") repeat-x;
 }
@@ -144,9 +151,8 @@ body {
   height: 23px;
   background: url("/images/zigzag-line-xs.png") repeat-x;
   @include media-breakpoint-up(sm) {
-    background: url("/images/zigzag-line.png") repeat-x;
+    background: url("/images/zigzag-line-sm.png") repeat-x;
     opacity: 0.5;
-    //bottom: 0;
   }
 }
 
@@ -161,7 +167,6 @@ body {
   width: 100%;
   object-fit: cover;
 }
-
 .map {
   position: relative;
   &:after {
@@ -175,7 +180,6 @@ body {
 }
 
 .made-by {
-
   & img {
     width: 100%;
     height: 100%;
@@ -199,7 +203,7 @@ body {
   }
 }
 
-.big-icon-posit {
+.big-icon-posit1 {
   position: absolute;
   top: 50%;
   right: 0;
@@ -274,34 +278,21 @@ body {
   }
 }
 
-.big-buttons {
-  .bb-text {
-    margin-left: 30px;
-    position: relative;
-    z-index: 1 ;
-  }
-}
-
-.bb-trans {
-  position: absolute;
-  content: '';
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: inherit;
-  display: flex;
-  align-items: center;
+.bb-hover {
+  transition: transform .2s ease;
   &:hover {
     transform: translateY(-5px);
-    transition: transform .2s ease;
   }
   &:visited {
     .bb-text {
-      opacity: .3;
     }
-    .big-icon {
-      opacity: .3;
-    }
+  }
+}
+
+.soc-icon {
+  align-items: flex-end;
+  margin: 0 15px;
+  @include media-breakpoint-up(sm) {
+    margin: 0 20px;
   }
 }

@@ -46,3 +46,7 @@
     @include square-size($cat);
   }
 }
+
+.footer-icon-size {
+  @include square-size($footer-icon-size);
+}

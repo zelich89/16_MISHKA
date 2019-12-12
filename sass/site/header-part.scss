@@ -122,17 +122,13 @@
       padding-left: 50px;
     }*/
   }
-  .icon {
+  .m-icon {
     position: absolute;
     transform: translateX(-150%);
     @include media-breakpoint-up(sm) {
       position: relative;
       transform: translateX(0);
     }
-  }
-  .icon-2 {
-    position: absolute;
-    transform: translateX(-150%);
   }
   .icon-const {
     @include media-breakpoint-up(sm) {
