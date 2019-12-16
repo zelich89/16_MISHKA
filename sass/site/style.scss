@@ -6,7 +6,7 @@
 }
 
 body {
-
+  min-width: 320px;
 }
 
 .media-breakpoint {
@@ -61,7 +61,7 @@ body {
 }
 
 .dn {
-  display: none;
+  display: none !important;
 }
 
 .button {
@@ -200,7 +200,7 @@ body {
 
 .main {
   @include media-breakpoint-up(sm) {
-    margin-top: -84px;
+    margin-top: -74px;
   }
 }
 

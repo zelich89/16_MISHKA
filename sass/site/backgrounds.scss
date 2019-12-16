@@ -20,6 +20,10 @@
   background-color: $secondary;
 }
 
+.bg-my-tertiary {
+  background: $tertiary;
+}
+
 .bg-main {
   background: url("/images/hero-mobile.jpg") no-repeat center;
   background-position-y: 5px;
