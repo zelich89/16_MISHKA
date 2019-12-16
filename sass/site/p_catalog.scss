@@ -59,8 +59,11 @@
 }
 
 .video {
-  &:hover .play {
-    transform: translate(-50%, -50%) scale(1.2);
+  &:hover {
+    cursor: pointer;
+    .play {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
   }
   &:visited .play {
     transform: translate(-50%, -50%) scale(.8);
