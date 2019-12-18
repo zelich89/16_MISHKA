@@ -64,29 +64,66 @@
 <div class="media-breakpoint position-fixed z-index-5"></div>
 
 <!-- --1-- -->
+<header class="header active js-sect">
+    <div class="container bg-white position-relative">
+        <div class="logo logo-posit head-item py-20"></div>
 
-<header class="header js-sect">
+        <div class="burger js-switch">
+            <a href="#" class=" link-text-dark">
+                <svg>
+                    <use xlink:href="#icon-burger"></use>
+                </svg>
+            </a>
+        </div>
+
+        <div class="close js-switch">
+            <a href="#" class="link-text-dark">
+                <svg>
+                    <use xlink:href="#icon-close"></use>
+                </svg>
+            </a>
+        </div>
+
+        <div class="nav row flex-column flex-sm-row">
+            <!--            <div class="logo head-item col-12 col-sm-6 col-lg-2 order-sm-1 order-lg-2 py-20"></div>-->
+            <div class="nav-katalog head-item col-12 col-sm-6 order-sm-2 order-lg-1">
+                <a href="#" class="item">Каталог товаров</a>
+                <a href="#" class="item">Вязание на заказ</a>
+            </div>
+            <div class="nav-bag head-item col-12 col-lg-6 order-sm-1 order-lg-2">
+                <a href="#" class="item">
+                    <div class="icon m-icon M-icon-size text-black-50">
+                        <svg>
+                            <use xlink:href="#icon-search"></use>
+                        </svg>
+                    </div>
+                    <span class="d-sm-none bold text-nowrap">Поиск по сайту</span>
+                </a>
+                <a href="#" class="item">
+                    <div class="icon m-icon icon-const M-icon-size text-black-50">
+                        <svg>
+                            <use xlink:href="#icon-bag"></use>
+                        </svg>
+                    </div>
+                    <span class="bold text-nowrap">Корзина: пока пуста</span>
+                </a>
+            </div>
+            <div class="nav-delivery d-none d-sm-flex head-item col-sm-6 order-sm-3 order-lg-4">
+                <div class="item">Бесплатная доставка по России</div>
+            </div>
+            <div class="nav-proposal d-none d-lg-flex head-item col-lg-6 order-lg-3">
+                <a href="#" class="item bold">Новые поступления</a>
+                <a href="#" class="item bold">Распродажа</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--
+<header class="header">
     <div class="container bg-white">
         <div class="row flex-column flex-sm-row">
-            <div class="logo head-item col-12 col-sm-6 col-lg-2 order-sm-1 order-lg-2 py-20">
-
-                <div class="burger js-switch">
-                    <a href="#" class=" link-text-dark">
-                        <svg>
-                            <use xlink:href="#icon-burger"></use>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="close js-switch">
-                    <a href="#" class="link-text-dark">
-                        <svg>
-                            <use xlink:href="#icon-close"></use>
-                        </svg>
-                    </a>
-                </div>
-
-            </div>
+            <div class="logo head-item col-12 col-sm-6 col-lg-2 order-sm-1 order-lg-2 py-20"></div>
             <div class="katalog head-item col-12 col-sm-6 col-lg-5 order-sm-3 order-lg-1">
                 <a href="#" class="item">Каталог товаров</a>
                 <a href="#" class="item">Вязание на заказ</a>
@@ -119,6 +156,8 @@
         </div>
     </div>
 </header>
+-->
+
 <!-- --2-- -->
 <section class="main_sect">
     <div class="main bg-m-white border-t1 border-light">

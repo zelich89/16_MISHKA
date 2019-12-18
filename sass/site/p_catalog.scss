@@ -12,7 +12,7 @@
 }
 
 .cards-content {
-  margin: 25px;
+  //margin: 25px;
 }
 
 
@@ -59,6 +59,7 @@
 }
 
 .video {
+  position: relative;
   &:hover {
     cursor: pointer;
     .play {
@@ -99,6 +100,7 @@
   }
 }
 
+/*
 .media-content {
   padding: 0 35px 30px 35px;
 }
@@ -106,4 +108,55 @@
 .video-content {
   width: 100%;
   pointer-events: none;
+}
+*/
+
+//.media-pic {
+//  height: 100%;
+//  margin: 0 -15px;
+//}
+
+.img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.media {
+  &-section {
+    border: 1px solid #ebebeb;
+    padding: 35px;
+    @include media-breakpoint-up(sm) {
+      padding: 40px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 80px 50px;
+    }
+  }
+  &-pic {
+    position: relative;
+  }
+  &-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 40px;
+    }
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+    &-icon {
+      margin-right: 25px;
+      margin-left: 25px;
+      @include media-breakpoint-up(sm) {
+        margin-left: 0;
+        margin-right: 30px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 30px;
+      }
+    }
+  }
 }

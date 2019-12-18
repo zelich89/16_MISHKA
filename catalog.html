@@ -68,14 +68,32 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
 
 
-<div class="media-breakpoint position-fixed z-index-5"></div>
+<div class="media-breakpoint position-fixed"></div>
 
 <!-- --1-- -->
 
-<header class="header">
+<header class="header js-sect">
     <div class="container bg-white">
         <div class="row flex-column flex-sm-row">
-            <div class="logo head-item col-12 col-sm-6 col-lg-2 order-sm-1 order-lg-2 py-20"></div>
+            <div class="logo head-item col-12 col-sm-6 col-lg-2 order-sm-1 order-lg-2 py-20">
+
+                <div class="burger js-switch">
+                    <a href="#" class=" link-text-dark">
+                        <svg>
+                            <use xlink:href="#icon-burger"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="close js-switch">
+                    <a href="#" class="link-text-dark">
+                        <svg>
+                            <use xlink:href="#icon-close"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
             <div class="katalog head-item col-12 col-sm-6 col-lg-5 order-sm-3 order-lg-1">
                 <a href="#" class="item">Каталог товаров</a>
                 <a href="#" class="item">Вязание на заказ</a>
@@ -101,14 +119,13 @@
             <div class="proposal d-none d-lg-flex head-item col-lg-6 order-lg-4">
                 <a href="#" class="item bold">Новые поступления</a>
                 <a href="#" class="item bold">Распродажа</a>
-                </div>
+            </div>
             <div class="delivery d-none d-sm-flex head-item col-sm-6 order-sm-5 order-lg-5">
                 <div class="item">Бесплатная доставка по России</div>
             </div>
         </div>
     </div>
 </header>
-
 <!-- --2-- -->
 
 <section class="main_sect position-relative">
@@ -213,8 +230,44 @@
 
 <!-- --4-- -->
 <section class="media">
-    <div class="container d-lg-flex mb-60">
-        <a href="#" class="video d-none d-sm-block mx--15 mx-lg-0 position-relative">
+    <div class="container 1border-5r">
+        <div class="row">
+            <a href="#" class="video d-none d-sm-block col-sm-12 col-lg-7">
+                <div class="media-pic">
+                    <img class="img-fluid" src="images/video-desktop.jpg" alt="">
+                    <div class="play play-posit bg-my-tertiary"></div>
+                </div>
+            </a>
+            <div class="media-section col-12 col-lg-5">
+                <div class="media-title">
+                    <div class="media-title-icon icon m-icon icon-const M-icon-size text-tertiary">
+                        <svg>
+                            <use xlink:href="#icon-camera"></use>
+                        </svg>
+                    </div>
+                    <div class="media-title-text bold">Процесс производства</div>
+                </div>
+                <a href="#" class="video d-sm-none col-sm-12 col-lg-7">
+                    <div class="media-pic">
+                        <img class="img-fluid" src="images/video-mobile.jpg" alt="">
+                        <div class="play play-posit bg-my-tertiary"></div>
+                    </div>
+                </a>
+                <div class="media-content border-1px border-red">
+                    <div class="media-content-text l-spacing-1">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="media-btn x-center">
+                                <a href="#" class="ghost-btn caption-1 text-uppercase bold text-nowrap border-darker px-75 px-sm-40">СДелать заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <div class="container d-lg-flex mb-60 border-5r">
+        <a href="#" class="video d-none d-sm-block mx&#45;&#45;15 mx-lg-0 position-relative">
             <img class="video-content" src="images/video-desktop.jpg" alt="">
             <div class="play play-posit bg-my-tertiary"></div>
         </a>
@@ -240,25 +293,8 @@
                 <a href="#" class="ghost-btn caption-1 text-uppercase bold text-nowrap border-darker px-75 px-sm-40">СДелать заказ</a>
             </div>
         </div>
-
-    </div>
+    </div>-->
 </section>
-
-<!--<section class="cards position-relative bg-white h-11">
-    <div class="cards-section row justify-content-between">
-        <div class="col-12 col-xl-4 mb-25">
-            <div class="card">
-                <div class="card-pic">
-                    <img src="https://www.placehold.it/100x25" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>-->
-
-<!-- --dop-- -->
-<!--<div class="h-620"></div>-->
-
 
 <!-- --8-- -->
 <footer class="footer bg-light">

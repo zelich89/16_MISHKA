@@ -4,24 +4,27 @@
   top: 50%;
   transform: translate(-100%, -50%);
   cursor: pointer;
-}
-
-.xs-version {
-  & .close {
-    display: none;
+  @include media-breakpoint-up(sm) {
+    display: none !important;
   }
 }
 
 .header {
+  .nav {
+    opacity: 0;
+  }
   .close {
     display: none;
   }
   &.active {
     .close {
-      display: block;
+      display: none;
     }
     .burger {
-      display: none;
+      display: block;
+    }
+    .nav {
+      opacity: 1;
     }
   }
 }
@@ -57,8 +60,8 @@
 }
 
 .logo {
-  height: 88px;
-  background: url("/images/logo-xs.png") no-repeat center;
+  height: 75px;
+  background: $m-white url("/images/logo-xs.png") no-repeat center;
   @include media-breakpoint-up(sm) {
     background: url("/images/logo-sm.png") no-repeat;
     background-position: left;
@@ -66,24 +69,130 @@
   @include media-breakpoint-up(lg) {
     background: url("/images/logo-lg.png") no-repeat center;
   }
+  &-posit {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include media-breakpoint-up(sm) {
+      left: 50px;
+      transform: translateX(0);
+    }
+    @include media-breakpoint-up(lg) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .item {
   display: flex;
   align-items: center;
-  //justify-content: center;
   padding: 30px 30px 30px 75px;
   white-space: nowrap;
   position: relative;
   @include media-breakpoint-up(sm) {
-    padding: 25px 20px;
+    padding: 25px 30px;
   }
   @include media-breakpoint-up(lg) {
     padding: 25px 30px;
   }
 }
 
-.katalog {
+.nav {
+  position: absolute;
+  z-index: 5;
+  top: 75px;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  @include media-breakpoint-up(sm) {
+    position: relative;
+    top: 0;
+    
+  }
+  &-katalog {
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: flex-start;
+    margin-left: auto;
+    .item {
+      border-bottom: 1px solid $light;
+      &:first-child {
+        border-top: 1px solid $light;
+      }
+    }
+    @include media-breakpoint-up(sm) {
+      flex-direction: row;
+      .item {
+        border-bottom: none;
+        &:first-child {
+          padding-right: 30px;
+        }
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
+      .item {
+        &:first-child {
+          border-right: 1px solid $light;
+        }
+      }
+    }
+  }
+  &-bag {
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: auto;
+    .item {
+      position: relative;
+      border-bottom: 1px solid $light;
+      @include media-breakpoint-up(sm) {
+        border-bottom: none;
+      }
+    }
+    .m-icon {
+      position: absolute;
+      transform: translateX(-150%);
+      @include media-breakpoint-up(sm) {
+        position: relative;
+        transform: translateX(0);
+      }
+    }
+    .icon-const {
+      @include media-breakpoint-up(sm) {
+        margin-right: 15px;
+      }
+
+    }
+    @include media-breakpoint-up(sm) {
+      flex-direction: row;
+      font-size: 18px;
+      .item {
+        border-left: 1px solid $light;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 16px;
+    }
+  }
+  &-delivery {
+    @include media-breakpoint-up(sm) {
+      margin-right: auto;
+      justify-content: flex-end;
+      background-color: #f9f9f9;
+    }
+  }
+  &-proposal {
+    @include media-breakpoint-up(sm) {
+      //background-color: #f9f9f9;
+    }
+  }
+}
+
+/*.katalog {
   flex-direction: column;
   font-weight: bold;
   justify-content: space-around;
@@ -105,16 +214,13 @@
       }
     }
   }
-}
+}*/
 
-.bag {
+/*.bag {
   flex-direction: column;
   justify-content: flex-end;
   .item {
     position: relative;
-/*    &:last-child {
-      padding-left: 50px;
-    }*/
   }
   .m-icon {
     position: absolute;
@@ -130,21 +236,6 @@
     }
 
   }
-  /*.icon {
-    &-left {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 30px;
-    }
-    &-own {
-      @extend .icon-left;
-      @include media-breakpoint-up(sm) {
-        position: relative;
-        left: 0;
-      }
-    }
-  }*/
   @include media-breakpoint-up(sm) {
     flex-direction: row;
     font-size: 18px;
@@ -155,13 +246,13 @@
   @include media-breakpoint-up(lg) {
     font-size: 16px;
   }
-}
+}*/
 
-.delivery {
+/*.delivery {
   @include media-breakpoint-up(md) {
     justify-content: flex-end;
   }
-}
+}*/
 
 
 

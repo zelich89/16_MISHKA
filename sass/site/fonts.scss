@@ -28,6 +28,9 @@ body {
   white-space: nowrap;
 }
 
+.l-spacing-1 {
+  letter-spacing: 1px;
+}
 .h2 {
   @include font(28px, 42px);
   @include media-breakpoint-up(md) {
