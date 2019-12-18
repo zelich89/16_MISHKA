@@ -2,7 +2,7 @@
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-100%, -50%);
   cursor: pointer;
 }
 
@@ -12,27 +12,18 @@
   }
 }
 
-.header.active {
+.header {
   .close {
-    display: block;
-  }
-  .burger {
     display: none;
   }
-  .menu {
-    transform: translateY(100%);
-    opacity: 1;
+  &.active {
+    .close {
+      display: block;
+    }
+    .burger {
+      display: none;
+    }
   }
-}
-
-.menu {
-  position: absolute;
-  right: -15px;
-  left: -15px;
-  bottom: 0;
-  transform: translateY(0);
-  opacity: 0;
-  transition: all 2s ease;
 }
 
 .link {
