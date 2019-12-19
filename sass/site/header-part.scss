@@ -79,7 +79,7 @@
     left: 50%;
     transform: translateX(-50%);
     @include media-breakpoint-up(sm) {
-      left: 50px;
+      left: 30px;
       transform: translateX(0);
     }
     @include media-breakpoint-up(lg) {
@@ -122,6 +122,7 @@
     background-color: white;
     .item {
       border-bottom: 1px solid $light;
+    : 0 !important;
       &:first-child {
         border-top: 1px solid $light;
       }
@@ -277,4 +278,18 @@
 
 .custom-checkbox {
   margin-right: 10px;
+}
+
+
+.my-container {
+  @extend .container;
+  @include media-breakpoint-only(sm) {
+    max-width: max-content;
+  }
+  @include media-breakpoint-only(md) {
+    max-width: max-content;
+  }
+  @include media-breakpoint-only(lg) {
+    max-width: 1100px;
+  }
 }
