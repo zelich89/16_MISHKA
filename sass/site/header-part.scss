@@ -286,14 +286,7 @@
 
 
 .my-container {
-  @extend .container;
-  @include media-breakpoint-only(sm) {
-    max-width: max-content;
-  }
-  @include media-breakpoint-only(md) {
-    max-width: max-content;
-  }
-  @include media-breakpoint-only(lg) {
-    max-width: 1100px;
+  @include media-breakpoint-down(lg){
+    max-width: none;
   }
 }
