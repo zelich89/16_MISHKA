@@ -122,7 +122,7 @@
     background-color: white;
     .item {
       border-bottom: 1px solid $light;
-    : 0 !important;
+      padding-left: 0 !important;
       &:first-child {
         border-top: 1px solid $light;
       }
