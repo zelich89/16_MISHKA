@@ -200,7 +200,9 @@ body {
 }
 
 .main {
+  transform: translateY(75px);
   @include media-breakpoint-up(sm) {
+    transform: translateY(0);
     margin-top: -74px;
   }
 }

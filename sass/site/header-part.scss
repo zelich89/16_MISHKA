@@ -1,8 +1,7 @@
 .burger, .close {
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translate(-100%, -50%);
+  transform: translate(-100%, 50%);
   cursor: pointer;
   @include media-breakpoint-up(sm) {
     display: none !important;
@@ -11,7 +10,10 @@
 
 .header {
   .nav {
-    opacity: 0;
+    visibility: hidden;
+    @include media-breakpoint-up(sm) {
+      visibility: visible;
+    }
   }
   .close {
     display: none;
@@ -24,7 +26,7 @@
       display: none;
     }
     .nav {
-      opacity: 1;
+      visibility: visible;
     }
   }
 }
@@ -61,7 +63,7 @@
 
 .logo {
   height: 75px;
-  background: $m-white url("/images/logo-xs.png") no-repeat center;
+  background: url("/images/logo-xs.png") no-repeat center;
   @include media-breakpoint-up(sm) {
     background: url("/images/logo-sm.png") no-repeat;
     background-position: left;
