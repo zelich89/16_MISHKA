@@ -18,10 +18,10 @@
   }
   &.active {
     .close {
-      display: none;
+      display: block;
     }
     .burger {
-      display: block;
+      display: none;
     }
     .nav {
       opacity: 1;
