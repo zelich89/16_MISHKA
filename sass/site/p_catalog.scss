@@ -159,4 +159,15 @@
       }
     }
   }
+  &-content {
+    &-text {
+      margin-bottom: 30px;
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 40px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 45px;
+      }
+    }
+  }
 }

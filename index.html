@@ -71,34 +71,33 @@
 <div class="media-breakpoint position-fixed"></div>
 
 <!-- --1-- -->
-
 <header class="header js-sect">
-    <div class="container bg-white">
-        <div class="row flex-column flex-sm-row">
-            <div class="logo head-item col-12 col-sm-6 col-lg-2 order-sm-1 order-lg-2 py-20">
+    <div class="my-container container position-relative">
+        <div class="logo logo-posit head-item py-20"></div>
 
-                <div class="burger js-switch">
-                    <a href="#" class=" link-text-dark">
-                        <svg>
-                            <use xlink:href="#icon-burger"></use>
-                        </svg>
-                    </a>
-                </div>
+        <div class="burger js-switch">
+            <a href="#" class=" link-text-dark">
+                <svg>
+                    <use xlink:href="#icon-burger"></use>
+                </svg>
+            </a>
+        </div>
 
-                <div class="close js-switch">
-                    <a href="#" class="link-text-dark">
-                        <svg>
-                            <use xlink:href="#icon-close"></use>
-                        </svg>
-                    </a>
-                </div>
+        <div class="close js-switch">
+            <a href="#" class="link-text-dark">
+                <svg>
+                    <use xlink:href="#icon-close"></use>
+                </svg>
+            </a>
+        </div>
 
-            </div>
-            <div class="katalog head-item col-12 col-sm-6 col-lg-5 order-sm-3 order-lg-1">
+        <div class="nav row flex-column flex-sm-row">
+            <!--            <div class="logo head-item col-12 col-sm-6 col-lg-2 order-sm-1 order-lg-2 py-20"></div>-->
+            <div class="nav-katalog head-item col-12 col-sm-6 order-sm-2 order-lg-1">
                 <a href="#" class="item">Каталог товаров</a>
                 <a href="#" class="item">Вязание на заказ</a>
             </div>
-            <div class="bag head-item col-12 col-sm-6 col-lg-5 order-sm-2 order-lg-3">
+            <div class="nav-bag head-item col-12 col-lg-6 order-sm-1 order-lg-2">
                 <a href="#" class="item">
                     <div class="icon m-icon M-icon-size text-black-50">
                         <svg>
@@ -116,16 +115,17 @@
                     <span class="bold text-nowrap">Корзина: пока пуста</span>
                 </a>
             </div>
-            <div class="proposal d-none d-lg-flex head-item col-lg-6 order-lg-4">
+            <div class="nav-delivery d-none d-sm-flex head-item col-sm-6 order-sm-3 order-lg-4">
+                <div class="item">Бесплатная доставка по России</div>
+            </div>
+            <div class="nav-proposal d-none d-lg-flex head-item col-lg-6 order-lg-3">
                 <a href="#" class="item bold">Новые поступления</a>
                 <a href="#" class="item bold">Распродажа</a>
-            </div>
-            <div class="delivery d-none d-sm-flex head-item col-sm-6 order-sm-5 order-lg-5">
-                <div class="item">Бесплатная доставка по России</div>
             </div>
         </div>
     </div>
 </header>
+
 <!-- --2-- -->
 
 <section class="main_sect position-relative">
@@ -229,10 +229,11 @@
 
 
 <!-- --4-- -->
+
 <section class="media">
-    <div class="container 1border-5r">
-        <div class="row">
-            <a href="#" class="video d-none d-sm-block col-sm-12 col-lg-7">
+    <div class="container">
+        <div class="row mb-30">
+            <a href="#" class="video d-none d-sm-block col-sm-12 col-lg-7 px-0">
                 <div class="media-pic">
                     <img class="img-fluid" src="images/video-desktop.jpg" alt="">
                     <div class="play play-posit bg-my-tertiary"></div>
@@ -253,7 +254,7 @@
                         <div class="play play-posit bg-my-tertiary"></div>
                     </div>
                 </a>
-                <div class="media-content border-1px border-red">
+                <div class="media-content">
                     <div class="media-content-text l-spacing-1">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
                     <div class="row">
                         <div class="col-6">
@@ -297,6 +298,7 @@
 </section>
 
 <!-- --8-- -->
+
 <footer class="footer bg-light">
     <div class="container">
         <div class="footer-full d-flex flex-column flex-sm-row justify-content-between align-items-center">
