@@ -131,7 +131,7 @@
       padding: 40px;
     }
     @include media-breakpoint-up(lg) {
-      padding: 80px 50px;
+      padding: 45px 50px;
     }
   }
   &-pic {
@@ -142,7 +142,7 @@
     align-items: center;
     margin-bottom: 30px;
     @include media-breakpoint-up(sm) {
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
     @include media-breakpoint-up(lg) {
       display: block;
@@ -155,7 +155,7 @@
         margin-right: 30px;
       }
       @include media-breakpoint-up(lg) {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
       }
     }
   }
@@ -163,10 +163,10 @@
     &-text {
       margin-bottom: 30px;
       @include media-breakpoint-up(sm) {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
       }
       @include media-breakpoint-up(lg) {
-        margin-bottom: 45px;
+        margin-bottom: 40px;
       }
     }
   }

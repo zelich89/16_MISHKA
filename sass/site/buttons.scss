@@ -8,6 +8,7 @@
   border-radius: 0;
   transition: all .2s ease;
   border: 2px solid;
+  //width: 100%;
   &:hover {
     background-color: $darker;
     color: $light;
@@ -16,6 +17,10 @@
     background-color: $darker;
     color: $dark;
   }
+}
+
+.full-btn {
+  width: 100%;
 }
 
 .arrow-btn {
