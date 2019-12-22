@@ -20,6 +20,13 @@
   }
 }
 
+.l-icon-size {
+  @include square-size($lable-icon-size);
+  svg {
+    @include square-size($lable-icon-size);
+  }
+}
+
 .custom-checkbox {
   @include square-size(checkbox-size-xs);
   svg {

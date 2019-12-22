@@ -7,6 +7,9 @@
 
 body {
   min-width: 320px;
+  input {
+    outline:none;
+  }
 }
 
 .media-breakpoint {
@@ -122,6 +125,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.input {
+  box-shadow: none;
+  resize: none;
+  outline: none;
+  border: none;
 }
 
 .way {

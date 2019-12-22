@@ -1,0 +1,16 @@
+::placeholder {
+  color: $down-color;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $down-color;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $down-color;
+}
+
+.dsds {
+  background-color: $m-white;
+}

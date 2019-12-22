@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZlaIFmZWh3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfI7YgHyPzBgYGDwAAAAAAAAAAAAAAAAAAAAAgHyOxIB8j/4WFh1YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgHyO7IB8j/wYGBi4AAAAAAAAAAAAAAAAAAAAAIB8j8CAfI/+FhYdJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB8juiAfI/8GBgYuAAAAACAfI/8gHyP+AAAAACAfI/8gHyP/hYWHIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfI7ogHyP/BgYGLh0cIB4gHyP/IB8j/xoZHSggHyP/IB8j/4WFhyIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgHyPRIB8j/wYGBikgHyPcIB8j/yAfI/8aGR2VIB8j/yAfI/+FhYciAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB8j0SAfI/8gHyNTIB8j/iAfI/8gHyP/IB8j5SAfI/8gHyP/hYWHIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfI9EgHyP/IB8j6yAfI/8gHyOxIB8j6CAfI/8gHyP/IB8j/4WFhyEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgHyPRIB8j/yAfI/8gHyP/CgoLBSAfI00gHyP/IB8j/yAfI/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB8j6CAfI/8gHyP/IB8j2AAAAAADAwMKIB8j/yAfI/8gHyPuAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAfI/sgHyP/IB8j/yAfIyYAAAAAAAAAACAfI+cgHyP/IB8j+QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgHyP/IB8j/yAfI/sBAQEBAAAAAAAAAAAgHyNwIB8j/yAfI/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIB8j+SAfI/8gHyNdAAAAAAAAAAAAAAAABgYGIyAfI/8gHyPqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYVGDkWFRikAAAAAAAAAAAAAAAAAAAAAAAAAAAgHyPKIB8juQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP/fAADnzwAA588AAOZPAADmTwAA5A8AAOQPAADgDwAA4Y8AAOGPAADjjwAA488AAOfPAAD3zwAA//8AAA==" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Catalog_MISHKA</title>
+    <svg style="display: none;">
+        <symbol viewBox="0 0 28 28" id="icon-burger">
+            <g>
+                <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"  fill="currentColor" stroke="none" />
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 38 38" id="icon-close">
+            <g clip-path="url(#mask_1)">
+                <path d="M0 0L0 3.36364L49.1765 3.36364L49.1765 0L0 0Z" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 0 34.77307)" id="Rectangle-49" fill="currentColor" stroke="none" />
+                <path d="M0 0L0 3.36364L49.1765 3.36364L49.1765 0L0 0Z" transform="matrix(-0.7071067 -0.7071068 -0.7071068 0.7071067 37.15149 34.77307)" id="Rectangle-50" fill="currentColor" stroke="none" />
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon-search">
+            <g>
+                <path d="M23.111 20.058l-4.977-4.977c.965-1.52 1.523-3.322 1.523-5.251 0-5.42-4.409-9.83-9.829-9.83-5.42 0-9.828 4.41-9.828 9.83s4.408 9.83 9.829 9.83c1.834 0 3.552-.505 5.022-1.383l5.021 5.021c2.144 2.141 5.384-1.096 3.239-3.24zm-20.064-10.228c0-3.739 3.043-6.782 6.782-6.782s6.782 3.042 6.782 6.782-3.043 6.782-6.782 6.782-6.782-3.043-6.782-6.782zm2.01-1.764c1.984-4.599 8.664-4.066" fill="currentColor" stroke="none"/>
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon-bag">
+            <g>
+                <path d="M4.558 7l4.701-4.702c.199-.198.46-.298.721-.298.613 0 1.02.505 1.02 1.029 0 .25-.092.504-.299.711l-3.26 3.26h-2.883zm12.001 0h2.883l-4.701-4.702c-.199-.198-.46-.298-.721-.298-.613 0-1.02.505-1.02 1.029 0 .25.092.504.299.711l3.26 3.26zm3.703 4l-.016.041-3.598 8.959h-9.296l-3.597-8.961-.016-.039h16.523zm3.738-2h-24v2h.643c.534 0 1.021.304 1.256.784l4.101 10.216h12l4.102-10.214c.233-.481.722-.786 1.256-.786h.642v-2z" fill="currentColor" stroke="none"/>
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon-checked">
+            <<path d="M24 4.685l-16.327 17.315-7.673-9.054.761-.648 6.95 8.203 15.561-16.501.728.685z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon-light">
+            <path d="M11.861 2.716s.04 1.615.14 5.527c.02.775-.142 1.545-.471 2.247l-3.349 6.96c-.206.961.645 2.297 2.027 2.945 1.332.625 2.777.404 3.405-.398l3.35-6.96c.329-.702.79-1.332 1.397-1.812 3.051-2.38 4.366-3.416 4.366-3.416l-10.865-5.093zm2.657 10.896c-.234.5-.83.716-1.33.481s-.715-.83-.48-1.331c.234-.499.83-.715 1.33-.48s.714.831.48 1.33zm-1.384-13.612l10.866 5.093-.849 1.811-10.866-5.093.849-1.811zm-13.134 16.271c0 1.823.688 3.71 1.951 5.249 1.234 1.503 2.9 2.48 4.539 2.48 1.354 0 2.791-.87 3.447-2.177l-1.121-.649c-1.051 1.894-3.215 1.881-4.072.576-.777-1.186-.619-3.261.436-5.692 1.006-2.321-.332-4.08-2.084-4.08-1.554-.001-3.096 1.407-3.096 4.293zm1.392-1.104c.184-.921.728-1.906 1.704-1.906.838 0 1.537.83.906 2.284-.879 2.027-1.197 3.845-.947 5.292-1.342-1.559-2.059-3.69-1.663-5.67z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 512 512" id="icon-light1">
+            <g  fill="currentColor" stroke="none">
+                <path d="M372.01,11.419C369.739,4.598,363.358,0,356.173,0H155.826c-7.185,0-13.565,4.598-15.838,11.419l-29.584,88.755h291.19
+			L372.01,11.419z"/>
+                <path d="M438.794,211.767l-26.069-78.201H99.274l-26.068,78.201c-1.701,5.087-0.848,10.685,2.294,15.038
+			c3.134,4.353,8.179,6.934,13.542,6.934h116.869v44.715c-37.772,18.054-64.349,55.864-66.446,99.98h16.359h200.348h16.36
+			c-2.097-44.117-28.675-81.927-66.446-99.98v-44.715h116.87c5.364,0,10.408-2.581,13.543-6.934
+			C439.641,222.452,440.494,216.854,438.794,211.767z"/>
+                <path d="M356.173,411.826H155.826c-27.619,0-50.087,22.468-50.087,50.087v33.391c0,9.223,7.473,16.696,16.696,16.696h267.13
+			c9.223,0,16.696-7.473,16.696-16.696v-33.391C406.26,434.294,383.793,411.826,356.173,411.826z"/>
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon-box">
+            <path d="M12 0l-11 6v12.131l11 5.869 11-5.869v-12.066l-11-6.065zm-9 11.74l2 1.057v2.066l-2-1.056v-2.067zm9.005-.876l-2.065-1.127 1.778-.988 2.082 1.157-1.795.958zm.995 1.736l2-1.067v2.279l-2 1.056v-2.268zm1.852-3.255l-2.104-1.168 1.884-1.047 2.144 1.188-1.924 1.027zm-2.099-4.4l2.029-1.127 1.884 1.039-2.034 1.13-1.879-1.042zm.849 1.614l-1.883 1.046-1.877-1.043 1.881-1.045 1.879 1.042zm-4.79-.569l-1.791-.995 1.895-1.033 1.776.985-1.88 1.043zm1.877 2.187l-1.789.993-1.893-1.032 1.806-1.003 1.876 1.042zm-4.689 5.148l2 1.056v2.066l-2-1.056v-2.066zm2 4.253v2.021l-2-1.067v-2.011l2 1.057zm-2-5.384v-2.328l2 1.091v2.294l-2-1.057zm5 .399v2.242l-2-1.056v-2.276l2 1.09zm-2 2.316l2 1.056v2.066l-2-1.056v-2.066zm4 1.09l2-1.056v2.066l-2 1.056v-2.066zm5 .556v1.978l-2 1.067v-1.988l2-1.057zm-2-.075v-2.066l2-1.056v2.066l-2 1.056zm0-3.196v-2.284l2-1.068v2.295l-2 1.057zm3-.454l2-1.056v2.066l-2 1.056v-2.066zm2-2.187l-2 1.056v-2.301l2-1.067v2.312zm-3.174-2.885l-2.164-1.2 2.019-1.121-.017-.03 2.246 1.239-2.084 1.112zm-4.078-4.51l-2.026 1.126-1.768-.979 2.041-1.113 1.753.966zm-7.767 2.314l1.802 1.001-1.815 1.008-1.835-1.001 1.848-1.008zm-.981 3.759v2.346l-2-1.057v-2.38l2 1.091zm-2 5.616l2 1.056v2.005l-2-1.067v-1.994zm6 5.196v-2.027l2 1.056v2.038l-2-1.067zm4-.938l2-1.056v1.994l-2 1.067v-2.005zm6-1.196v-1.972l2-1.056v1.961l-2 1.067z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon-cat">
+            <path d="M11.954 11c3.33 0 7.057 6.123 7.632 8.716.575 2.594-.996 4.729-3.484 4.112-1.092-.271-3.252-1.307-4.102-1.291-.925.016-2.379.836-3.587 1.252-2.657.916-4.717-1.283-4.01-4.073.774-3.051 4.48-8.716 7.551-8.716zm10.793-4.39c1.188.539 1.629 2.82.894 5.27-.704 2.341-2.33 3.806-4.556 2.796-1.931-.877-2.158-3.178-.894-5.27 1.274-2.107 3.367-3.336 4.556-2.796zm-21.968.706c-1.044.729-1.06 2.996.082 5.215 1.092 2.12 2.913 3.236 4.868 1.87 1.696-1.185 1.504-3.433-.082-5.215-1.596-1.793-3.824-2.599-4.868-1.87zm15.643-7.292c1.323.251 2.321 2.428 2.182 5.062-.134 2.517-1.405 4.382-3.882 3.912-2.149-.407-2.938-2.657-2.181-5.061.761-2.421 2.559-4.164 3.881-3.913zm-10.295.058c-1.268.451-1.92 2.756-1.377 5.337.519 2.467 2.062 4.114 4.437 3.269 2.06-.732 2.494-3.077 1.377-5.336-1.125-2.276-3.169-3.721-4.437-3.27z" fill="currentColor" stroke="none" />
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon-play">
+            <path d="M3 22v-20l18 10-18 10z" fill="currentColor" stroke="none"/>
+        </symbol>
+        <symbol viewBox="0 0 24 24" id="icon-camera">
+            <path d="M14 9h-12c-1.104 0-2 .896-2 2v8c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-8c0-1.104-.896-2-2-2zm-1 4h-10v-1h10v1zm-4.757-9h2.757v2h-2.103c-.514 0-1.008.198-1.38.553l-.469.447h-3.048l2.121-2.121c.563-.563 1.326-.879 2.122-.879zm9.817 1c0 1.104-.896 2-2 2h-4.06v-4h4.06c1.104 0 2 .895 2 2zm5.94 5v10l-6-3v-4l6-3z" fill="currentColor" stroke="none"/>
+        </symbol>
+    </svg>
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+
+
+<div class="media-breakpoint position-fixed"></div>
+
+<!-- --1-- -->
+<header class="header js-sect">
+    <div class="my-container container position-relative">
+        <div class="logo logo-posit head-item py-20"></div>
+
+        <div class="burger js-switch">
+            <a href="#" class=" link-text-dark">
+                <svg>
+                    <use xlink:href="#icon-burger"></use>
+                </svg>
+            </a>
+        </div>
+
+        <div class="close js-switch">
+            <a href="#" class="link-text-dark">
+                <svg>
+                    <use xlink:href="#icon-close"></use>
+                </svg>
+            </a>
+        </div>
+
+        <div class="nav row flex-column flex-sm-row">
+            <!--            <div class="logo head-item col-12 col-sm-6 col-lg-2 order-sm-1 order-lg-2 py-20"></div>-->
+            <div class="nav-katalog head-item col-12 col-sm-6 order-sm-2 order-lg-1">
+                <a href="#" class="item">Каталог товаров</a>
+                <a href="#" class="item">Вязание на заказ</a>
+            </div>
+            <div class="nav-bag head-item col-12 col-lg-6 order-sm-1 order-lg-2">
+                <a href="#" class="item">
+                    <div class="icon m-icon M-icon-size text-black-50">
+                        <svg>
+                            <use xlink:href="#icon-search"></use>
+                        </svg>
+                    </div>
+                    <span class="d-sm-none bold text-nowrap">Поиск по сайту</span>
+                </a>
+                <a href="#" class="item">
+                    <div class="icon m-icon icon-const M-icon-size text-black-50">
+                        <svg>
+                            <use xlink:href="#icon-bag"></use>
+                        </svg>
+                    </div>
+                    <span class="bold text-nowrap">Корзина: пока пуста</span>
+                </a>
+            </div>
+            <div class="nav-delivery d-none d-sm-flex head-item col-sm-6 order-sm-3 order-lg-4">
+                <div class="item">Бесплатная доставка по России</div>
+            </div>
+            <div class="nav-proposal d-none d-lg-flex head-item col-lg-6 order-lg-3">
+                <a href="#" class="item bold">Новые поступления</a>
+                <a href="#" class="item bold">Распродажа</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- --2-- -->
+<section class="main_sect position-relative">
+    <div class="main bg-light border-t1 border-light">
+        <div class="container">
+            <div class="row x-center catalog-padding">
+                <div class="col-10 col-sm-8 h2 bold text-black text-center">
+                    Каталог товаров
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="zigzag-fill d-none d-sm-block"></div>
+</section>
+
+<!-- --3-- -->
+<section class="cards position-relative bg-white my-50">
+    <div class="container">
+        <div class="cards-content row justify-content-around flex-wrap">
+            <div class="col-12 col-lg-4 mb-25">
+                <div class="card-item pb-30 pb-lg-0">
+                    <div class="card flex-sm-row flex-lg-column">
+                        <div class="card-item-picture-div">
+                            <img class="card-item-picture d-sm-none" src="images/photo-1-mobile.jpg" alt="">
+                            <img class="card-item-picture d-none d-sm-block d-lg-none" src="images/photo-1-tablet.jpg" alt="">
+                            <img class="card-item-picture d-none d-lg-block" src="images/photo-1-desktop.jpg" alt="">
+                        </div>
+                        <a href="#" class="card-item-content p-30">
+                            <div class="card-item-content-dop">
+                                <div class="h3 bold pb-20">Зайчик-попрыгайчик</div>
+                                <div class="text-truncate pb-20">Рост 30 см, вес 200 г</div>
+                            </div>
+                            <div class="d-flex justify-content-between h3 bold border-t1 border-light pt-20">
+                                1200 руб.
+                                <div class="icon m-icon icon-const M-icon-size text-black-50">
+                                    <svg>
+                                        <use xlink:href="#icon-bag"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-25">
+                <div class="card-item pb-30 pb-lg-0">
+                    <div class="card flex-sm-row flex-lg-column">
+                        <div class="card-item-picture-div">
+                            <img class="card-item-picture d-sm-none" src="images/photo-2-mobile.jpg" alt="">
+                            <img class="card-item-picture d-none d-sm-block d-lg-none" src="images/photo-2-tablet.jpg" alt="">
+                            <img class="card-item-picture d-none d-lg-block" src="images/photo-2-desktop.jpg" alt="">
+                        </div>
+                        <a href="#" class="card-item-content p-30">
+                            <div class="card-item-content-dop">
+                                <div class="h3 bold pb-20">Корзинка для белья</div>
+                                <div class="text-truncate pb-20">Диаметр 15 см, высота 10 см</div>
+                            </div>
+                            <div class="d-flex justify-content-between h3 bold border-t1 border-light pt-20">
+                                690 руб.
+                                <div class="icon m-icon icon-const M-icon-size text-black-50">
+                                    <svg>
+                                        <use xlink:href="#icon-bag"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-25">
+                <div class="card-item pb-30 pb-lg-0">
+                    <div class="card flex-sm-row flex-lg-column">
+                        <div class="card-item-picture-div">
+                            <img class="card-item-picture d-sm-none" src="images/photo-3-mobile.jpg" alt="">
+                            <img class="card-item-picture d-none d-sm-block d-lg-none" src="images/photo-3-tablet.jpg" alt="">
+                            <img class="card-item-picture d-none d-lg-block" src="images/photo-3-desktop.jpg" alt="">
+                        </div>
+                        <a href="#" class="card-item-content p-30">
+                            <div class="card-item-content-dop">
+                                <div class="h3 bold pb-20">Большая корзинка <br>для игрушек</div>
+                                <div class="text-truncate pb-20">Диаметр 30 см, высота 30 см</div>
+                            </div>
+                            <div class="d-flex justify-content-between h3 bold border-t1 border-light pt-20">
+                                1500 руб.
+                                <div class="icon m-icon icon-const M-icon-size text-black-50">
+                                    <svg>
+                                        <use xlink:href="#icon-bag"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- --4-- -->
+<section class="media">
+    <div class="container">
+        <div class="row mb-30">
+            <a href="#" class="video d-none d-sm-block col-sm-12 col-lg-7 px-0">
+                <div class="media-pic">
+                    <img class="img-fluid" src="images/video-desktop.jpg" alt="">
+                    <div class="play play-posit bg-my-tertiary"></div>
+                </div>
+            </a>
+            <div class="media-section col-12 col-lg-5">
+                <div class="media-title">
+                    <div class="media-title-icon icon m-icon icon-const M-icon-size text-tertiary">
+                        <svg>
+                            <use xlink:href="#icon-camera"></use>
+                        </svg>
+                    </div>
+                    <div class="media-title-text bold">Процесс производства</div>
+                </div>
+                <a href="#" class="video d-sm-none col-sm-12 col-lg-7">
+                    <div class="media-pic">
+                        <img class="img-fluid" src="images/video-mobile.jpg" alt="">
+                        <div class="play play-posit bg-my-tertiary"></div>
+                    </div>
+                </a>
+                <div class="media-content">
+                    <div class="media-content-text l-spacing-1">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
+                    <a href="#" class="ghost-btn full-btn caption-1 text-uppercase bold text-nowrap border-darker px-75 px-sm-40">СДелать заказ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <div class="container d-lg-flex mb-60 border-5r">
+        <a href="#" class="video d-none d-sm-block mx&#45;&#45;15 mx-lg-0 position-relative">
+            <img class="video-content" src="images/video-desktop.jpg" alt="">
+            <div class="play play-posit bg-my-tertiary"></div>
+        </a>
+        <div class="obertka row flex-column border-1px border-light">
+            <div class="d-flex flex-lg-column h3 bold p-35 ">
+                <div class="icon m-icon icon-const M-icon-size text-tertiary">
+                    <svg>
+                        <use xlink:href="#icon-camera"></use>
+                    </svg>
+                </div>
+                <div class="d-inline-block pl-25">
+                    Процесcс производства
+                </div>
+            </div>
+            <a href="#" class="video d-sm-none position-relative">
+                <img class="video-content" src="images/video-mobile.jpg" alt="">
+                <div class="play play-posit bg-my-tertiary"></div>
+            </a>
+            <div class="media-content">
+                По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </div>
+            <div class="media-btn x-center">
+                <a href="#" class="ghost-btn caption-1 text-uppercase bold text-nowrap border-darker px-75 px-sm-40">СДелать заказ</a>
+            </div>
+        </div>
+    </div>-->
+</section>
+
+<!-- --8-- -->
+<footer class="footer bg-light">
+    <div class="container">
+        <div class="footer-full d-flex flex-column flex-sm-row justify-content-between align-items-center">
+            <a href="#" class="footer-one d-none d-sm-block py-40">
+                <img src="images/logo-footer.png" alt="">
+            </a>
+            <div class="footer-two y-center my-30 my-sm-50">
+                <a href="#" class="icon soc-icon footer-icon-size">
+                    <img src="images/s-insta.png" alt="">
+                </a>
+                <a href="#" class="icon soc-icon footer-icon-size">
+                    <img src="images/s-facebook.png" alt="">
+                </a>
+                <a href="#" class="icon soc-icon footer-icon-size">
+                    <img src="images/s-twitter.png" alt="">
+                </a>
+            </div>
+            <div class="footer-three d-flex h3 bold">
+                Разработано
+                <a href="#" class="icon footer-icon-size made-by position-relative ml-35">
+                    <svg class="text-primary">
+                        <use xlink:href="#icon-cat"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script src="js/burger.js"></script>
+</body>
+</html>

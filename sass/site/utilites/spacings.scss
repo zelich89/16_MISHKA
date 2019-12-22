@@ -21,6 +21,19 @@
   }
 }
 
+.form-padding {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  @include media-breakpoint-up(md) {
+    padding-top: 100px;
+    padding-bottom: 75px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
 $iter: 150;
 
 @for $i from -20 through $iter{
