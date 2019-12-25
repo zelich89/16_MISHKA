@@ -3,10 +3,15 @@
   align-items: center;
   user-select: none;
   &-div {
-    margin-left: 20px;
+    @include media-breakpoint-up(sm) {
+      margin-left: 20px;
+    }
     &:not(:last-child) {
       //background: chartreuse;
       margin-bottom: 20px;
+    }
+    @include media-breakpoint-down(xs) {
+      padding-left: 0;
     }
   }
   .radioed {
@@ -127,8 +132,10 @@
       font-weight: bold;
       color: $primary;
       text-transform: uppercase;
-      margin-left: 20px;
       padding: 0 0 20px 20px;
+      @include media-breakpoint-up(sm) {
+        margin-left: 20px;
+      }
       @include media-breakpoint-up(lg) {
         padding-left: 30px;
       }
@@ -147,8 +154,10 @@
       font-weight: bold;
       color: $primary;
       text-transform: uppercase;
-      margin-left: 20px;
       padding: 0 0 20px 20px;
+      @include media-breakpoint-up(sm) {
+        margin-left: 20px;
+      }
       @include media-breakpoint-up(lg) {
         padding-left: 30px;
       }
@@ -159,6 +168,9 @@
     @extend .h3;
   }
   .Mi-Check-col {
+    @include media-breakpoint-down(xs) {
+      padding-left: 0;
+    }
     &:last-child {
       .Mi-Check-div {
         margin-bottom: 0;
@@ -188,8 +200,12 @@
       width: 100%;
       border: none;
       border-bottom: 2px solid;
+      padding: 8px 0;
+    @include media-breakpoint-up(sm) {
       padding: 8px 15px;
       margin-left: 25px;
+      align-items: center;
+    }
       &:hover {
         border-color: $primary !important;
         transition: border .2s ease;
@@ -234,9 +250,10 @@
       width: 100%;
       border: none;
       border-bottom: 2px solid black;
-      padding: 8px 15px;
+      padding: 8px 0;
       @include media-breakpoint-up(sm) {
         background: $m-white;
+        padding: 8px 15px;
       }
       &:hover {
         border-color: $primary !important;
@@ -264,8 +281,10 @@
       font-weight: bold;
       color: $primary;
       text-transform: uppercase;
-      margin-left: 20px;
       padding: 0 0 20px 20px;
+      @include media-breakpoint-up(sm) {
+        margin-left: 20px;
+      }
       @include media-breakpoint-up(lg) {
         padding-left: 30px;
       }
@@ -292,7 +311,9 @@
 }
 
 .dop-section {
-  margin-left: 20px;
+  @include media-breakpoint-up(sm) {
+    margin-left: 20px;
+  }
   &-label {
     &-name {
       @extend .h3;
