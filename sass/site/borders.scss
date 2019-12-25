@@ -38,3 +38,8 @@
 .border-5r {
   border: 5px solid red;
 }
+
+.border-primary-hover:hover {
+  border-color: $primary !important;
+  transition: border .2s ease;
+}

@@ -24,6 +24,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: border .5s ease;
     &:hover {
       border-color: $hover-color;
     }
@@ -73,6 +74,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: border .5s ease;
     &:hover {
       border-color: $hover-color;
     }
@@ -278,9 +280,9 @@
   &-comment {
     margin-bottom: 30px;
     white-space: nowrap;
-    text-align: end;
     @include media-breakpoint-up(sm) {
       margin-bottom: 0;
+      text-align: end;
     }
   }
 }
