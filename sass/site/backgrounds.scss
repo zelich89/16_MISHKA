@@ -12,6 +12,10 @@
   background-color: $m-white;
 }
 
+.bg-m-fon-white {
+  background-color: $m-fon-white;
+}
+
 .bg-my-primary {
   background-color: $primary;
 }
@@ -25,13 +29,13 @@
 }
 
 .bg-main {
-  background: url("../images/hero-mobile.jpg") no-repeat center;
+  background: $m-fon-white url("../images/hero-mobile.jpg") no-repeat center;
   background-position-y: 5px;
   @include media-breakpoint-up(sm) {
     background-position-y: 10px;
   }
   @include media-breakpoint-up(lg) {
-    background: url("../images/hero-desktop.jpg")  no-repeat center;
+    background: $m-fon-white url("../images/hero-desktop.jpg")  no-repeat center;
     background-position-y: top;
   }
 }

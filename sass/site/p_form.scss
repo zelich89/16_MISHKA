@@ -146,9 +146,19 @@
     font-weight: bold;
     @extend .h3;
   }
+  .line {
+    right: 0;
+    left: 20px;
+    height: 1px;
+    background-color: $primary;
+    transform: translateY(10px);
+  }
 }
 
 .color-section {
+  @include media-breakpoint-up(sm) {
+    background: $m-white;
+  }
   &-label {
     &-name {
       @extend .h3;
@@ -192,6 +202,13 @@
       }
     }
   }
+  .line {
+    right: 0;
+    left: 20px;
+    height: 1px;
+    background-color: $primary;
+    transform: translateY(10px);
+  }
 }
 
 .fio-section {
@@ -201,9 +218,9 @@
       width: 100%;
       border: none;
       border-bottom: 2px solid;
-      padding: 8px 0;
+      padding: 16px 0;
     @include media-breakpoint-up(sm) {
-      padding: 8px 15px;
+      padding: 16px 15px;
       margin-left: 25px;
       align-items: center;
     }
@@ -222,7 +239,7 @@
       font-weight: bold;
       color: $primary;
       text-transform: uppercase;
-      padding-bottom: 20px;
+      padding-bottom: 30px;
       @include media-breakpoint-up(lg) {
         padding-left: 30px;
       }
@@ -233,7 +250,7 @@
   }
   .line {
     right: 0;
-    left: 0;
+    left: 20px;
     height: 1px;
     background-color: $primary;
     transform: translateY(10px);
@@ -251,10 +268,10 @@
       width: 100%;
       border: none;
       border-bottom: 2px solid black;
-      padding: 8px 0;
+      padding: 16px 0;
       @include media-breakpoint-up(sm) {
         background: $m-white;
-        padding: 8px 15px;
+        padding: 16px 15px;
       }
       &:hover {
         border-color: $primary !important;
@@ -282,9 +299,12 @@
       font-weight: bold;
       color: $primary;
       text-transform: uppercase;
-      padding: 0 0 20px 20px;
-      @include media-breakpoint-up(sm) {
-        margin-left: 20px;
+      display: flex;
+      align-items: center;
+      //padding: 0 0 20px 20px;
+      @include media-breakpoint-down(xs) {
+        //margin-left: 20px;
+        padding-bottom: 20px;
       }
       @include media-breakpoint-up(lg) {
         padding-left: 30px;

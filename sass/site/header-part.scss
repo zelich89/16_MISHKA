@@ -10,9 +10,11 @@
 
 .header {
   .nav {
-    visibility: hidden;
+    //visibility: hidden;
+    display: none;
     @include media-breakpoint-up(sm) {
-      visibility: visible;
+      //visibility: visible;
+      display: flex;
     }
   }
   .close {
@@ -26,7 +28,8 @@
       display: none;
     }
     .nav {
-      visibility: visible;
+      //visibility: visible;
+      display: flex;
     }
   }
 }
@@ -115,7 +118,6 @@
   @include media-breakpoint-up(sm) {
     position: relative;
     top: 0;
-    
   }
   &-katalog {
     flex-direction: column;
@@ -123,6 +125,7 @@
     justify-content: flex-start;
     margin-left: auto;
     background-color: white;
+    padding-right: 0;
     .item {
       border-bottom: 1px solid $light;
       //padding-left: 0 !important;
@@ -155,6 +158,7 @@
     justify-content: flex-end;
     margin-right: auto;
     background-color: white;
+    padding-right: 0;
     .item {
       position: relative;
       border-bottom: 1px solid $light;
