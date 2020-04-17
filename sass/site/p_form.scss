@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: border .5s ease;
+    transition: border $transition-time ease;
     &:hover {
       border-color: $hover-color;
     }
@@ -40,7 +40,7 @@
       height: 42%;
       border-radius: 50%;
       transform: scale(0);
-      transition: transform 0.5s ease;
+      transition: transform $transition-time ease;
     }
     &-text {
       font-weight: bold;
@@ -79,7 +79,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: border .5s ease;
+    transition: border $transition-time ease;
     &:hover {
       border-color: $hover-color;
     }
@@ -92,7 +92,7 @@
         @include square-size($btn-size-lg/1.3);
       }
       transform: scale(0);
-      transition: transform 0.4s ease;
+      transition: transform $transition-time ease;
     }
   }
   .checkbox:checked ~ .checked {
@@ -226,7 +226,7 @@
     }
       &:hover {
         border-color: $primary !important;
-        transition: border .2s ease;
+        transition: border $transition-time ease;
       }
     }
     &:last-child {
@@ -275,7 +275,7 @@
       }
       &:hover {
         border-color: $primary !important;
-        transition: border .2s ease;
+        transition: border $transition-time ease;
       }
       //margin-left: 25px;
     }
@@ -284,7 +284,7 @@
     }
     &:hover .icon {
       color: $primary !important;
-      transition: color .5s ease;
+      transition: color $transition-time ease;
     }
   }
   &-content {
@@ -358,6 +358,15 @@
       margin-bottom: 50px;
     }
   }
+  .Mi-input {
+    &-content {
+      &:hover {
+        border-color: $primary !important;
+        transition: border $transition-time ease;
+      }
+    }
+    }
+
   &-comment {
     margin-bottom: 30px;
     white-space: nowrap;

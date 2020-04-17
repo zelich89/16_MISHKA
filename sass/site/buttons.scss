@@ -6,11 +6,12 @@
 .ghost-btn {
   @extend .btn;
   border-radius: 0;
-  transition: all .2s ease;
+  transition: all $transition-time ease;
   border: 2px solid;
   //width: 100%;
   &:hover {
     background-color: $darker;
+    border-color: $darker;
     color: $light;
   }
   /*&:visited {
